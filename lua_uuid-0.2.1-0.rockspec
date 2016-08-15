@@ -21,5 +21,10 @@ build = {
       sources = { "lua_uuid.c" },
       libraries = { "uuid" }
     }
+  },
+  platforms = {
+	windows = {
+		modules = { ["lua_uuid"]= { libraries = {'ole32'} } }
+	}
   }
 }
