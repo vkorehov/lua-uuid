@@ -1,5 +1,5 @@
 package = "lua_uuid"
-version = "0.2.0-2"
+version = "0.2.1-0"
 source = {
   url = "git://github.com/vkorehov/lua-uuid"
 }

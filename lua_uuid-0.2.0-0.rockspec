@@ -1,8 +1,7 @@
 package = "lua_uuid"
-version = "0.2.0-0"
+version = "0.2.1-0"
 source = {
-  url = "https://github.com/Mashape/lua-uuid/archive/0.2.0.tar.gz",
-  tag = "0.2.0"
+  url = "https://github.com/vkorehov/lua-uuid",
 }
 description = {
   summary = "UUID generation",
@@ -22,5 +21,10 @@ build = {
       sources = { "lua_uuid.c" },
       libraries = { "uuid" }
     }
+  },
+  platforms = {
+	windows = {
+		modules = { "lua_uuid" = { libraries = {'ole32'} } }
+	}
   }
 }
